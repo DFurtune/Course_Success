@@ -283,3 +283,28 @@
 	border: none
 	color: $colorWhite
 	letter-spacing: 0.2px
+	cursor: pointer
+
+@mixin subtitle
+	@include montserrat_bold
+	font-size: 14px
+	line-height: 24px
+	letter-spacing: 0.2px
+	color: $colorSubtitle
+	margin-bottom: 10px
+
+@mixin contentTitle
+	@include montserrat_bold
+	font-size: 40px
+	line-height: 50px
+	letter-spacing: 0.2px
+	color: $colorWhite
+	margin-bottom: 10px
+
+@mixin contentDescription
+	@include montserrat_regular
+	font-size: 14px
+	line-height: 20px
+	letter-spacing: 0.2px
+	color: $colorWhite
+	margin-bottom: 80px

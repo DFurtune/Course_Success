@@ -3,4 +3,56 @@
 	background: $colorDarkBackground;
 	padding-top: 160px;
 	padding-bottom: 193px;
+	text-align: center;
+
+	.subtitle {
+		@include subtitle;
+	}
+	.content-title {
+		@include contentTitle;
+	}
+	.content-description {
+		@include contentDescription;
+	}
+	.courses {
+		display: flex;
+		justify-content: space-between;
+		width: 687px;
+		margin: 0 auto;
+		&__item {
+			width: 328px;
+			height: 292px;
+			background: $colorWhite;
+			padding: 35px 40px;
+			cursor: pointer;
+			.red-element {
+				width: 70px;
+				height: 76px;
+				background: $colorDanger;
+				border-radius: 10px;
+				margin: 0 auto 20px;
+				padding: 22px 19px;
+			}
+			h5 {
+				@include montserrat_bold;
+				font-size: 16px;
+				line-height: 24px;
+				letter-spacing: 0.1px;
+				color: $colorText;
+			}
+			.red-line {
+				width: 50px;
+				height: 2px;
+				background: $colorDanger;
+				margin: 20px auto;
+			}
+			p {
+				@include contentDescription;
+				display: inline-block;
+				width: 136px;
+				color: $colorSecondText;
+				margin-bottom: 35px;
+			}
+		}
+	}
 }
