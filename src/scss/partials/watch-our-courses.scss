@@ -1,0 +1,80 @@
+.watch-our-courses {
+	width: 100%;
+	background: $colorDarkBackground;
+	padding: 160px 195px;
+	.watch-container {
+		max-width: 1045px;
+		display: flex;
+		justify-content: space-between;	
+		margin: 0 auto;
+		&__item {
+			.red-line {
+				width: 94px;
+				height: 7px;
+				background: $colorDanger;
+				margin-top: 162px;
+				margin-bottom: 35px;
+			}
+			h2 {
+				@include contentTitle;
+				margin-bottom: 35px;
+			}
+			p {
+				@include contentDescription;
+				margin-bottom: 35px;
+				width: 351px;
+			}
+			a {
+				@include subtitle;
+				position: relative;
+				&::after {
+					content: url("../img/link-arrow.svg");
+					position: absolute;
+					top: 1px;
+					margin-left: 10px;
+				}
+			}
+		}
+		.images {
+			width: 508px;
+			height: 570px;
+			max-width: 508px;
+			max-height: 570px;
+			position: relative;
+			.percent {
+				max-width: 247px;
+				max-height: 247px;
+				position: absolute;
+				top: 323px;
+				left: 76px;
+				z-index: 2;
+			}
+			.photo {
+				max-width: 408px;
+				max-height: 408px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				border-radius: 0px 87px;
+				z-index: 1;
+			}
+			.singles {
+				position: absolute;
+				top: 80px;
+				left: 392px;
+				z-index: 2;
+			}
+			div {
+				width: 408px;
+				height: 408px;
+				max-width: 408px;
+				max-height: 408px;
+				position: absolute;
+				background: #00087e;
+				top: 22px;
+				left: 30px;
+				border-radius: 0px 87px;
+			}
+		}
+	}
+}
