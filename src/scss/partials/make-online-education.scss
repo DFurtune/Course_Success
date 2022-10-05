@@ -1,0 +1,124 @@
+.make-online-education {
+	width: 100%;
+	background: $colorDarkBackground;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	text-align: center;
+
+	.subtitle {
+		@include subtitle;
+	}
+	.content-title {
+		@include contentTitle;
+	}
+	.content-description {
+		@include contentDescription;
+	}
+	.slider-education {
+		width: 710px;
+		margin: 0 auto;
+		.product-card {
+			width: 330px;
+			background-color: $colorWhite;
+			margin-right: 15px;
+			.first {
+				background-image: url("../img/product-cover-1.jpg");
+			}
+			.second {
+				background-image: url("../img/product-cover-2.jpg");
+			}
+			.third {
+				background-image: url("../img/product-cover-3.jpg");
+			}
+			.product-card-top {
+				height: 300px;
+				position: relative;
+				span {
+					@include subtitle;
+					background-color: $colorDanger;
+					color: $colorWhite;
+					padding: 0px 10px;
+					border-radius: 3px;
+					position: absolute;
+					top: 20px;
+					left: 20px;
+				}
+				.product-actions {
+					position: absolute;
+					width: 140px;
+					display: flex;
+					justify-content: space-between;
+					top: 236px;
+					left: 50%;
+					margin-left: -70px;
+					.product-actions-item {
+						position: relative;
+						width: 40px;
+						height: 40px;
+						background-color: $colorWhite;
+						border-radius: 50%;
+						cursor: pointer;
+						&:hover {
+							background: $colorDanger;
+						}
+						img {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							margin-top: -10px;
+							margin-left: -10px;
+						}
+						.like {
+							margin-top: -8px;
+							margin-left: -9px;
+						}
+					}
+				}
+			}
+			.product-card-bottom {
+				padding: 25px;
+				.product-category {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-start;
+					.link {
+						@include subtitle;
+						margin-bottom: 11px;
+					}
+					.rate {
+						background: $colorText;
+						padding: 5px;
+						border-radius: 20px;
+						position: relative;
+						width: 50px;
+						text-align: right;
+						span {
+							@include montserrat_regular;
+							font-size: 12px;
+							line-height: 16px;
+							letter-spacing: 0.2px;
+							color: $colorWhite;
+							&::before {
+								content: "";
+								background: url(../../img/star.svg) no-repeat;
+								position: absolute;
+								width: 15px;
+								height: 15px;
+								left: 5px;
+							}
+						}
+					}
+				}
+				.product-title {
+					@include montserrat_bold;
+					font-size: 16px;
+					line-height: 24px;
+					letter-spacing: 0.1px;
+					color: $colorDarkBackground;
+					text-align: left;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
