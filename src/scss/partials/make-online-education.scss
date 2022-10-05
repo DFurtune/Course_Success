@@ -100,7 +100,7 @@
 							color: $colorWhite;
 							&::before {
 								content: "";
-								background: url(../../img/star.svg) no-repeat;
+								background: url(../img/star.svg) no-repeat;
 								position: absolute;
 								width: 15px;
 								height: 15px;
@@ -133,7 +133,7 @@
 					position: relative;
 					&::before {
 						content: "";
-						background: url(../../img/sales.svg) no-repeat;
+						background: url(../img/sales.svg) no-repeat;
 						width: 16px;
 						height: 16px;
 						position: absolute;
@@ -179,7 +179,7 @@
 					}
 					.time::before {
 						content: "";
-						background: url(../../img/time.svg) no-repeat;
+						background: url(../img/time.svg) no-repeat;
 						width: 16px;
 						height: 16px;
 						margin-left: -21px;
@@ -187,7 +187,7 @@
 					}
 					.lessons::before {
 						content: "";
-						background: url(../../img/lessons.svg) no-repeat;
+						background: url(../img/lessons.svg) no-repeat;
 						width: 16px;
 						height: 16px;
 						margin-left: -21px;
@@ -195,7 +195,7 @@
 					}
 					.progress::before {
 						content: "";
-						background: url(../../img/progress.svg) no-repeat;
+						background: url(../img/progress.svg) no-repeat;
 						width: 16px;
 						height: 16px;
 						margin-left: -21px;
@@ -218,7 +218,7 @@
 						position: relative;
 						&::after {
 							content: "";
-							background: url(../../img/btn-arrow.svg) no-repeat;
+							background: url(../img/btn-arrow.svg) no-repeat;
 							width: 9px;
 							height: 16px;
 							position: absolute;
