@@ -118,6 +118,115 @@
 					text-align: left;
 					margin-bottom: 10px;
 				}
+				.product-description {
+					@include contentDescription;
+					color: $colorSecondText;
+					text-align: left;
+					margin-bottom: 10px;
+				}
+				.sales {
+					@include subtitle;
+					color: $colorSecondText;
+					text-align: left;
+					margin-bottom: 10px;
+					margin-left: 26px;
+					position: relative;
+					&::before {
+						content: "";
+						background: url(../../img/sales.svg) no-repeat;
+						width: 16px;
+						height: 16px;
+						position: absolute;
+						left: -26px;
+						top: 4px;
+					}
+				}
+				.price-box {
+					display: flex;
+					padding: 5px 3px;
+					margin-bottom: 30px;
+					.price {
+						@include montserrat_bold;
+						font-size: 16px;
+						line-height: 24px;
+						letter-spacing: 0.1px;
+						color: $colorMuted;
+						margin-right: 5px;
+					}
+					.new-price {
+						@include montserrat_bold;
+						font-size: 16px;
+						line-height: 24px;
+						letter-spacing: 0.1px;
+						color: $colorSecondary;
+					}
+				}
+				.info {
+					text-align: left;
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 25px;
+					.time,
+					.lessons,
+					.progress {
+						@include montserrat_regular;
+						font-size: 12px;
+						line-height: 16px;
+						letter-spacing: 0.2px;
+						color: $colorSecondText;
+						margin-left: 21px;
+						position: relative;
+					}
+					.time::before {
+						content: "";
+						background: url(../../img/time.svg) no-repeat;
+						width: 16px;
+						height: 16px;
+						margin-left: -21px;
+						position: absolute;
+					}
+					.lessons::before {
+						content: "";
+						background: url(../../img/lessons.svg) no-repeat;
+						width: 16px;
+						height: 16px;
+						margin-left: -21px;
+						position: absolute;
+					}
+					.progress::before {
+						content: "";
+						background: url(../../img/progress.svg) no-repeat;
+						width: 16px;
+						height: 16px;
+						margin-left: -21px;
+						position: absolute;
+					}
+				}
+				.learn-more-btn {
+					@include subtitle;
+					width: 142px;
+					height: 44px;
+					border: 1px solid $colorSubtitle;
+					border-radius: 37px;
+					color: $colorSubtitle;
+					background: transparent;
+					margin-bottom: 45px;
+					float: left;
+					cursor: pointer;
+					span {
+						margin-right: 20px;
+						position: relative;
+						&::after {
+							content: "";
+							background: url(../../img/btn-arrow.svg) no-repeat;
+							width: 9px;
+							height: 16px;
+							position: absolute;
+							right: -19px;
+							bottom: 0;
+						}
+					}
+				}
 			}
 		}
 	}
