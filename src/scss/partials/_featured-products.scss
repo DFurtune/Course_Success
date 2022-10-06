@@ -1,0 +1,53 @@
+.featured-products {
+	width: 100%;
+	background: $colorDarkBackground;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	text-align: center;
+
+	.subtitle {
+		@include subtitle;
+	}
+	.content-title {
+		@include contentTitle;
+	}
+	.content-description {
+		@include contentDescription;
+	}
+	.slider-user {
+		width: 1050px;
+		margin: 0 auto;
+		.user-item {
+			width: 500px;
+			padding: 25px 171px 30px 171px;
+			margin-right: 15px;
+			background: $colorWhite;
+		}
+		.user-photo {
+			margin: 0 auto;
+			border-radius: 50%;
+			margin-bottom: 30px;
+		}
+		.user-text {
+			@include contentDescription;
+			margin-bottom: 15px;
+			color: $colorSecondText;
+		}
+		.stars {
+			margin: 0 auto;
+			margin-bottom: 15px;
+		}
+		.user-title {
+			@include subtitle;
+			font-size: 16px;
+			letter-spacing: 0.1px;
+			color: $colorText;
+			margin-bottom: 5px;
+		}
+		.user-position{
+			@include subtitle;
+			color: $colorSecondText;
+			margin-bottom: 0;
+		}
+	}
+}

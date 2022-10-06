@@ -11,5 +11,14 @@ $( document ).ready(
 			arrows: false,
 			dots: false
 		  });
+		  $(".multiple-items-user").slick({
+			infinite: true,
+			speed: 500,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			arrows: false,
+			dots: false,
+			autoplay: true
+		  });
 	}
 );
