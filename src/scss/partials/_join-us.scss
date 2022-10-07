@@ -1,0 +1,47 @@
+.join-us-block {
+	width: 100%;
+	background: $colorDarkBackground;
+	padding-top: 160px;
+	padding-bottom: 160px;
+	text-align: center;
+
+	.subtitle {
+		@include subtitle;
+	}
+	.content-title {
+		@include contentTitle;
+	}
+	.content-description {
+		@include contentDescription;
+	}
+	form {
+		position: relative;
+		input {
+			width: 688px;
+			height: 58px;
+			background: #f9f9f9;
+			border: 1px solid $colorSolidBorder;
+			border-radius: 5px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			padding-left: 20px;
+			@include montserrat_regular;
+			font-size: 14px;
+			line-height: 28px;
+			letter-spacing: 0.2px;
+		}
+		.subscribe {
+			@include btn;
+			position: absolute;
+			width: 117px;
+			height: 58px;
+			border: 1px solid $colorSolidBorder;
+			border-radius: 0px 5px 5px 0px;
+			@include montserrat_regular;
+			font-size: 14px;
+			line-height: 28px;
+			letter-spacing: 0.2px;
+			margin-left: -117px;
+		}
+	}
+}
