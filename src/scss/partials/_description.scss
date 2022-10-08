@@ -1,0 +1,8 @@
+.description {
+	@include subtitle;
+	width: 100%;
+	text-align: center;
+	color: $colorSecondText;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
