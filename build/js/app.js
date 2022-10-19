@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 $(document).ready(function () {
   $(".multiple-items").slick({
@@ -19,6 +19,9 @@ $(document).ready(function () {
     arrows: false,
     dots: false,
     autoplay: true
+  });
+  $(".toggle").click(function () {
+    $(".mobile-menu").toggle("slow");
   });
 });
 //# sourceMappingURL=app.js.map
