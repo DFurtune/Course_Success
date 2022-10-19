@@ -1,4 +1,12 @@
+@media screen and (min-width: 1200px) {
+	.mobile-menu {
+		display: none;
+	}
+}
 @media screen and (max-width: 1199px) {
+	.mobile-menu {
+		display: none;
+	}
 }
 @media screen and (max-width: 991px) {
 	header {
@@ -50,8 +58,8 @@
 					}
 				}
 				.mobile-menu {
-					position:absolute;
-					left:0;
+					position: absolute;
+					left: 0;
 					top: 80px;
 					width: 100%;
 					height: 100vh;
@@ -64,10 +72,72 @@
 						line-height: 32px;
 						letter-spacing: 0.1px;
 						color: $colorWhite;
+					}
+					.mobile-menu__item {
+						margin-bottom: 40px;
+					}
+				}
+			}
+		}
+	}
+	.courses {
+		height: 620px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.watch-container {
+		height: 1050px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+@media screen and (max-width: 575px) {
+	header {
+		.header-filter {
+			.container {
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+		}
+	}
+	.login-link {
+		display: none;
+	}
+	.packages {
+		.courses {
+			width: auto;
+		}
+	}
+	.watch-our-courses {
+		padding-top: 0;
+	}
+	.join-us-block {
+		form {
+			input {
+				width: 80%;
+			}
+		}
+	}
+	.footer {
+		.container {
+			height: 900px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			.get-in-touch,
+			.company-info,
+			.features,
+			.resources {
+				width: 250px;
+				text-align: center;
+				.social {
+					width: 70%;
+					margin: 0 auto;
+					a {
+						img {
+							height: 23px;
 						}
-						.mobile-menu__item{
-							margin-bottom: 40px;
-						}
+					}
 				}
 			}
 		}
